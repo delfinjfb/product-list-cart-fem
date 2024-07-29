@@ -1,6 +1,7 @@
 // src/components/Cart.jsx
 import React from "react";
 import emptyCartImage from "./images/illustration-empty-cart.svg";
+import DeleteItem from "./DeleteItem";
 
 const Cart = ({cartItems, onRemoveFromCart, onConfirmOrder}) => {
 	const getTotalPrice = () => {
@@ -40,12 +41,7 @@ const Cart = ({cartItems, onRemoveFromCart, onConfirmOrder}) => {
 										</span>
 									</p>
 								</div>
-								<button
-									onClick={() => onRemoveFromCart(item)}
-									className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600"
-								>
-									Remove
-								</button>
+								<DeleteItem onDelete={() => onRemoveFromCart(item)} />
 							</li>
 						))}
 					</ul>
