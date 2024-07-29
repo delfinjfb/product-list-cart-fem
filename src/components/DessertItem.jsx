@@ -8,12 +8,15 @@ const DessertItem = ({dessert, onAddToCart}) => {
 			<img
 				src={dessert.image}
 				alt={dessert.name}
-				className="rounded-md w-full object-cover h-40"
+				className="rounded-md w-full object-cover h-60"
 			/>
 			<AddToCartButton onAddToCart={() => onAddToCart(dessert)} />
-			<div className="mt-4 w-full text-center">
+			<div className="mt-9 w-full ">
+				<h4 className="text-sm">{dessert.category}</h4>
 				<h3 className="text-lg font-medium">{dessert.name}</h3>
-				<p className="text-gray-600">${dessert.price.toFixed(2)}</p>
+				<p className="text-orange-500 font font-bold ">
+					${dessert.price.toFixed(2)}
+				</p>
 			</div>
 		</div>
 	);
