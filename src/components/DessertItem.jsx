@@ -4,7 +4,7 @@ import AddToCartButton from "./AddToCartButton.jsx";
 
 const DessertItem = ({dessert, onAddToCart}) => {
 	return (
-		<div className="bg-white p-4 rounded-lg shadow flex flex-col items-center">
+		<div className="bg-white  rounded-lg shadow flex flex-col items-center">
 			<img
 				src={dessert.image}
 				alt={dessert.name}
