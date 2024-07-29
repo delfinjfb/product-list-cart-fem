@@ -1,20 +1,22 @@
 // src/components/DessertItem.jsx
-import React from 'react';
+import React from "react";
+import AddToCartButton from "./AddToCartButton.jsx";
 
-const DessertItem = ({ dessert, onAddToCart }) => {
-  return (
-    <div className="bg-white p-4 rounded-lg shadow">
-      <img src={dessert.image} alt={dessert.name} className="rounded-md" />
-      <h3 className="text-lg font-medium mt-2">{dessert.name}</h3>
-      <p className="text-gray-600">${dessert.price.toFixed(2)}</p>
-      <button
-        onClick={() => onAddToCart(dessert)}
-        className="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600"
-      >
-        Add to Cart
-      </button>
-    </div>
-  );
+const DessertItem = ({dessert, onAddToCart}) => {
+	return (
+		<div className="bg-white p-4 rounded-lg shadow flex flex-col items-center">
+			<img
+				src={dessert.image}
+				alt={dessert.name}
+				className="rounded-md w-full object-cover h-40"
+			/>
+			<AddToCartButton onAddToCart={() => onAddToCart(dessert)} />
+			<div className="mt-4 w-full text-center">
+				<h3 className="text-lg font-medium">{dessert.name}</h3>
+				<p className="text-gray-600">${dessert.price.toFixed(2)}</p>
+			</div>
+		</div>
+	);
 };
 
-export default DessertItem; // Make sure to export the component
+export default DessertItem;
