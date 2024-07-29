@@ -11,7 +11,7 @@ const Cart = ({cartItems, onRemoveFromCart, onConfirmOrder}) => {
 
 	return (
 		<div className="bg-white p-4 rounded-lg shadow  top-0 right-0 m-4 w-80 md:w-96 lg:static lg:w-full lg:mt-8">
-			<h2 className="text-2xl font-bold mb-4">
+			<h2 className="text-2xl font-bold mb-4 text-orange-500">
 				Your Cart ({cartItems.length})
 			</h2>
 
@@ -29,9 +29,15 @@ const Cart = ({cartItems, onRemoveFromCart, onConfirmOrder}) => {
 								className="flex justify-between items-center mb-4"
 							>
 								<div>
-									<h3 className="text-lg font-medium">{item.name}</h3>
+									<h3 className="text-lg text-sm font-bold">{item.name}</h3>
 									<p className="text-gray-600">
-										{item.quantity} x ${item.price.toFixed(2)}
+										<span className="text-orange-500 font-bold">
+											{item.quantity}x
+										</span>
+										@ ${item.price.toFixed(2)}{" "}
+										<span className="">
+											{(item.price * item.quantity).toFixed(2)}{" "}
+										</span>
 									</p>
 								</div>
 								<button
