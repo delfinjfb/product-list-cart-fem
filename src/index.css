@@ -1,13 +1,29 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* index.css */
+
+/* Red Hat Text Regular */
+@font-face {
+	font-family: "Red Hat Text";
+	src: url("../public/fonts/RedHatText-Regular.ttf") format("truetype");
+	font-weight: 400; /* Normal weight */
+	font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Red Hat Text SemiBold */
+@font-face {
+	font-family: "Red Hat Text";
+	src: url("../public/fonts/RedHatText-SemiBold.ttf") format("truetype");
+	font-weight: 600; /* SemiBold weight */
+	font-style: normal;
+}
+
+/* Red Hat Text Bold */
+@font-face {
+	font-family: "Red Hat Text";
+	src: url("../public/fonts/RedHatText-Bold.ttf") format("truetype");
+	font-weight: 700; /* Bold weight */
+	font-style: normal;
 }
