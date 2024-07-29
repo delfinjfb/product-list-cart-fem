@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 /* index.css */
-
+body {
+	background-color: #fcf8f5;
+}
 /* Red Hat Text Regular */
 @font-face {
 	font-family: "Red Hat Text";
