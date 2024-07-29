@@ -35,7 +35,7 @@ const Cart = ({cartItems, onRemoveFromCart, onConfirmOrder}) => {
 				<p className="text-lg font-bold">Order Total: ${getTotalPrice()}</p>
 				<button
 					onClick={onConfirmOrder}
-					className="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600 mt-4 w-full"
+					className="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 mt-4 w-full"
 				>
 					Confirm Order
 				</button>
