@@ -61,7 +61,7 @@ const Home = () => {
 				title="Delicious Desserts"
 				description="Enjoy our delicious desserts, including cakes, cookies, pastries, and more."
 			/>
-			<div className="w-full lg:w-2/3">
+			<div className="w-full lg:w-2/3 pl-4 pr-4">
 				<h1 className="text-3xl font-bold mb-4">Desserts</h1>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 					{desserts.map(dessert => (
