@@ -27,8 +27,8 @@ const DessertItem = ({
 				onRemoveItem={onRemoveItem}
 			/>
 			<div className="mt-9 w-full">
-				<h3 className="text-sm">{dessert.category}</h3>
-				<h2 className="text-lg font-medium">{dessert.name}</h2>
+				<h2 class="text-sm">{dessert.category}</h2>
+				<h2 class="text-lg font-medium">{dessert.name}</h2>
 				<p className="text-orange-500 font-bold">${dessert.price.toFixed(2)}</p>
 			</div>
 		</div>
