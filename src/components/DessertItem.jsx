@@ -3,6 +3,7 @@ import AddToCartButton from "./AddToCartButton.jsx";
 
 const DessertItem = ({
 	dessert,
+	id,
 	cartItem,
 	onAddToCart,
 	onAddItem,
@@ -19,6 +20,7 @@ const DessertItem = ({
 			</figure>
 			<AddToCartButton
 				item={dessert}
+				id={id}
 				cartItem={cartItem}
 				onAddToCart={() => onAddToCart(dessert)}
 				onAddItem={onAddItem}

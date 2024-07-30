@@ -64,10 +64,11 @@ const Home = () => {
 			<div className="w-full lg:w-2/3 pl-4 pr-4">
 				<h1 className="text-3xl font-bold mb-4">Desserts</h1>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-					{desserts.map(dessert => (
+					{desserts.map((dessert, index) => (
 						<DessertItem
 							key={dessert.name}
 							dessert={dessert}
+							id={index}
 							cartItem={cartItems.find(item => item.name === dessert.name)}
 							onAddToCart={handleAddToCart}
 							onAddItem={() => handleAddToCart(dessert)}

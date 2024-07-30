@@ -1,7 +1,13 @@
 import React from "react";
 import {FaPlus, FaMinus} from "react-icons/fa";
 
-const AddToCartButton = ({cartItem, onAddToCart, onAddItem, onRemoveItem}) => {
+const AddToCartButton = ({
+	cartItem,
+	onAddToCart,
+	onAddItem,
+	onRemoveItem,
+	id
+}) => {
 	return (
 		<div>
 			{!cartItem ? (
@@ -22,7 +28,7 @@ const AddToCartButton = ({cartItem, onAddToCart, onAddItem, onRemoveItem}) => {
 							<path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z" />
 						</g>
 						<defs>
-							<clipPath id="cart1">
+							<clipPath id={`cart${id}`}>
 								<path fill="#fff" d="M.333 0h20v20h-20z" />
 							</clipPath>
 						</defs>
