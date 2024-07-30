@@ -1,4 +1,3 @@
-// src/components/Cart.jsx
 import React from "react";
 import emptyCartImage from "./images/illustration-empty-cart.svg";
 import DeleteItem from "./DeleteItem";

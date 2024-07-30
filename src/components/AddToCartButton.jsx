@@ -1,4 +1,3 @@
-// src/components/AddToCartButton.jsx
 import React from "react";
 import {FaPlus, FaMinus} from "react-icons/fa";
 

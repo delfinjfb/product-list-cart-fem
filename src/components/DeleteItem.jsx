@@ -1,4 +1,3 @@
-// src/components/DeleteItem.jsx
 import React from "react";
 
 const DeleteItem = ({onDelete}) => {
