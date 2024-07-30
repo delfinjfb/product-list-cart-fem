@@ -14,6 +14,7 @@ function App() {
 				<main>
 					<Home cart={cart} setCart={setCart} />
 				</main>
+				<footer></footer>
 			</div>
 		</HelmetProvider>
 	);

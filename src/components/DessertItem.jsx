@@ -10,11 +10,13 @@ const DessertItem = ({
 }) => {
 	return (
 		<div className="rounded-lg flex flex-col items-center relative">
-			<img
-				src={dessert.image.tablet}
-				alt={dessert.name}
-				className="rounded-md w-full object-cover h-60"
-			/>
+			<figure>
+				<img
+					src={dessert.image.tablet}
+					alt={dessert.name}
+					className="rounded-md w-full object-cover h-60"
+				/>
+			</figure>
 			<AddToCartButton
 				item={dessert}
 				cartItem={cartItem}
