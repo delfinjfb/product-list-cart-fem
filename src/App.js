@@ -1,17 +1,20 @@
 // src/App.jsx
 import React, { useState } from 'react';
-import Home from "./pages/Home"; // Import your Home component
-import Header from "./components/Header";
+import { HelmetProvider } from 'react-helmet-async';
+import Home from './pages/Home'; // Import your Home component
+import Header from './components/Header';
 
 function App() {
-  const [cart, setCart] = useState([]); 
+  const [cart, setCart] = useState([]);
 
-	return (
-		<div className="App">
-			<Header cartItemCount={cart.length} />
-			<Home />
-		</div>
-	);
+  return (
+    <HelmetProvider>
+      <div className="App">
+        <Header cartItemCount={cart.length} />
+        <Home cart={cart} setCart={setCart} />
+      </div>
+    </HelmetProvider>
+  );
 }
 
 export default App;
