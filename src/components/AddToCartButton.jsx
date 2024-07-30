@@ -14,7 +14,7 @@ const AddToCartButton = ({
 			{!cartItem ? (
 				<button
 					onClick={onAddToCart}
-					className="flex items-center justify-center bg-white text-orange-500  px-4 py-2 rounded-full hover:bg-orange-600 border border-orange-500 -m-5"
+					className="flex items-center justify-center bg-white text-orange-500  px-4 py-2 rounded-full hover:bg-orange-600 border border-orange-500 -m-5 hover:text-white"
 				>
 					<FaShoppingCart className="mr-2" />
 					<span>Add to Cart</span>
