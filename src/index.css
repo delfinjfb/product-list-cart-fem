@@ -4,28 +4,28 @@
 
 /* index.css */
 body {
-	background-color: #fcf8f5;
+  background-color: #fcf8f5;
 }
 /* Red Hat Text Regular */
 @font-face {
-	font-family: "Red Hat Text";
-	src: url("../public/fonts/RedHatText-Regular.ttf") format("truetype");
-	font-weight: 400; /* Normal weight */
-	font-style: normal;
+  font-family: 'Red Hat Text';
+  src: url('../public/fonts/RedHatText-Regular.ttf') format('truetype');
+  font-weight: 400; /* Normal weight */
+  font-style: normal;
 }
 
 /* Red Hat Text SemiBold */
 @font-face {
-	font-family: "Red Hat Text";
-	src: url("../public/fonts/RedHatText-SemiBold.ttf") format("truetype");
-	font-weight: 600; /* SemiBold weight */
-	font-style: normal;
+  font-family: 'Red Hat Text';
+  src: url('../public/fonts/RedHatText-SemiBold.ttf') format('truetype');
+  font-weight: 600; /* SemiBold weight */
+  font-style: normal;
 }
 
 /* Red Hat Text Bold */
 @font-face {
-	font-family: "Red Hat Text";
-	src: url("../public/fonts/RedHatText-Bold.ttf") format("truetype");
-	font-weight: 700; /* Bold weight */
-	font-style: normal;
+  font-family: 'Red Hat Text';
+  src: url('../public/fonts/RedHatText-Bold.ttf') format('truetype');
+  font-weight: 700; /* Bold weight */
+  font-style: normal;
 }
